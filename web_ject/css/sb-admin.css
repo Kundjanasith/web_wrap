@@ -225,3 +225,129 @@ ul.alert-dropdown {
 .panel-yellow > a:hover {
     color: #df8a13;
 }
+
+
+.panel-namer{
+    border-color: #7a43b6;
+}
+.panel-namer > .panel-heading {
+    border-color: #7a43b6;
+    color: #fff;
+    background-color: #7a43b6;
+}
+.panel-namer > a {
+    color: #7a43b6;
+}
+.panel-namer > a:hover {
+    color: #7a43b6;
+}
+
+
+.panel-samer{
+    border-color: #bc0085;
+}
+.panel-samer > .panel-heading {
+    border-color: #bc0085;
+    color: #fff;
+    background-color: #bc0085;
+}
+.panel-samer > a {
+    color: #bc0085;
+}
+.panel-samer > a:hover {
+    color: #bc0085;
+}
+
+.panel-antarctica{
+    border-color: #f89406;
+}
+.panel-antarctica > .panel-heading {
+    border-color: #f89406;
+    color: #fff;
+    background-color: #f89406;
+}
+.panel-antarctica > a {
+    color: #f89406;
+}
+.panel-antarctica > a:hover {
+    color: #f89406;
+}
+
+
+.panel-australia{
+    border-color: #ffc40d;
+}
+.panel-australia > .panel-heading {
+    border-color: #ffc40d;
+    color: #fff;
+    background-color: #ffc40d;
+}
+.panel-australia > a {
+    color: #ffc40d;
+}
+.panel-australia > a:hover {
+    color: #ffc40d;
+}
+
+
+.panel-asia {
+    border-color: #b52b27;
+}
+.panel-asia > .panel-heading {
+    border-color: #b52b27;
+    color: #fff;
+    background-color: #b52b27;
+}
+.panel-asia > a {
+    color: #b52b27;
+}
+.panel-asia > a:hover {
+    color: #b52b27;
+}
+
+.panel-europe{
+    border-color: #46a546;
+}
+.panel-europe > .panel-heading {
+    border-color: #46a546;
+    color: #fff;
+    background-color: #46a546;
+}
+.panel-europe > a {
+    color: #46a546;
+}
+.panel-europe > a:hover {
+    color: #46a546;
+}
+
+
+.panel-ocean {
+    border-color: #0064cd;
+}
+.panel-ocean > .panel-heading {
+    border-color: #0064cd;
+    color: #fff;
+    background-color: #0064cd;
+}
+.panel-ocean > a {
+    color: #0064cd;
+}
+.panel-ocean > a:hover {
+    color: #0064cd;
+}
+
+
+.panel-africa{
+    border-color: #007eb3;
+}
+.panel-africa > .panel-heading {
+    border-color: #007eb3;
+    color: #fff;
+    background-color: #007eb3;
+}
+.panel-africa > a {
+    color: #007eb3;
+}
+.panel-africa > a:hover {
+    color: #007eb3;
+}
