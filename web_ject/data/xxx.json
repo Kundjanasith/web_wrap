@@ -1,0 +1,694 @@
+[
+    {
+        "country": "Afghanistan",
+        "x": "25154.9"
+    },
+    {
+        "country": "Albania",
+        "x": "11910.3"
+    },
+    {
+        "country": "Algeria",
+        "x": "3699.9"
+    },
+    {
+        "country": "Andorra",
+        "x": "27.8"
+    },
+    {
+        "country": "Angola",
+        "x": "40.1"
+    },
+    {
+        "country": "Antarctica",
+        "x": "150"
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "x": "90"
+    },
+    {
+        "country": "Argentina",
+        "x": "39862"
+    },
+    {
+        "country": "Armenia",
+        "x": "208.7"
+    },
+    {
+        "country": "Australia",
+        "x": "4628.1"
+    },
+    {
+        "country": "Austria",
+        "x": "2629.5"
+    },
+    {
+        "country": "Azerbaijan",
+        "x": "945.5"
+    },
+    {
+        "country": "Bangladesh",
+        "x": "358.6"
+    },
+    {
+        "country": "Barbados",
+        "x": "4.7"
+    },
+    {
+        "country": "Belgium",
+        "x": "532.9"
+    },
+    {
+        "country": "Benin",
+        "x": "5.4"
+    },
+    {
+        "country": "Bhutan",
+        "x": "230.1"
+    },
+    {
+        "country": "Bolivia",
+        "x": "6638.5"
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "x": "4442.9"
+    },
+    {
+        "country": "Botswana",
+        "x": "51.3"
+    },
+    {
+        "country": "Brazil",
+        "x": "663.9"
+    },
+    {
+        "country": "British Virgin Islands",
+        "x": "120.9"
+    },
+    {
+        "country": "Bulgaria",
+        "x": "2526.9"
+    },
+    {
+        "country": "Burundi",
+        "x": "53.2"
+    },
+    {
+        "country": "Cameroon",
+        "x": "14.2"
+    },
+    {
+        "country": "Canada",
+        "x": "8040.02"
+    },
+    {
+        "country": "Central African Republic",
+        "x": "33.4"
+    },
+    {
+        "country": "Chile",
+        "x": "80900.7"
+    },
+    {
+        "country": "China",
+        "x": "44786.3"
+    },
+    {
+        "country": "Colombia",
+        "x": "13857.9"
+    },
+    {
+        "country": "Costa Rica",
+        "x": "3207.9"
+    },
+    {
+        "country": "Croatia",
+        "x": "3378.7"
+    },
+    {
+        "country": "Cuba",
+        "x": "74.5"
+    },
+    {
+        "country": "Curacao",
+        "x": "5"
+    },
+    {
+        "country": "Cyprus",
+        "x": "1201.2"
+    },
+    {
+        "country": "Czech Republic",
+        "x": "2302.3"
+    },
+    {
+        "country": "Democratic Republic of the Congo",
+        "x": "1660.7"
+    },
+    {
+        "country": "Denmark",
+        "x": "18.8"
+    },
+    {
+        "country": "Djibouti",
+        "x": "213.5"
+    },
+    {
+        "country": "Dominica",
+        "x": "131.2"
+    },
+    {
+        "country": "Dominican Republic",
+        "x": "2236.6"
+    },
+    {
+        "country": "East Timor",
+        "x": "439.4"
+    },
+    {
+        "country": "Ecuador",
+        "x": "4819.6"
+    },
+    {
+        "country": "Egypt",
+        "x": "634.9"
+    },
+    {
+        "country": "El Salvador",
+        "x": "1429.4"
+    },
+    {
+        "country": "Equatorial Guinea",
+        "x": "4.8"
+    },
+    {
+        "country": "Eritrea",
+        "x": "278.5"
+    },
+    {
+        "country": "Estonia",
+        "x": "4.5"
+    },
+    {
+        "country": "Ethiopia",
+        "x": "826.4"
+    },
+    {
+        "country": "Federated States of Micronesia",
+        "x": "5.3"
+    },
+    {
+        "country": "Fiji",
+        "x": "204.1"
+    },
+    {
+        "country": "Finland",
+        "x": "23.9"
+    },
+    {
+        "country": "France",
+        "x": "22875.8"
+    },
+    {
+        "country": "French Southern and Antarctic Lands",
+        "x": "28.5"
+    },
+    {
+        "country": "Gabon",
+        "x": "11.4"
+    },
+    {
+        "country": "Georgia",
+        "x": "915.3"
+    },
+    {
+        "country": "Germany",
+        "x": "6235"
+    },
+    {
+        "country": "Ghana",
+        "x": "41.2"
+    },
+    {
+        "country": "Greece",
+        "x": "50761.7"
+    },
+    {
+        "country": "Greenland",
+        "x": "220.5"
+    },
+    {
+        "country": "Grenada",
+        "x": "5.1"
+    },
+    {
+        "country": "Guam",
+        "x": "45.4"
+    },
+    {
+        "country": "Guatemala",
+        "x": "4981.2"
+    },
+    {
+        "country": "Guinea",
+        "x": "26.8"
+    },
+    {
+        "country": "Haiti",
+        "x": "574.9"
+    },
+    {
+        "country": "Honduras",
+        "x": "557"
+    },
+    {
+        "country": "Hungary",
+        "x": "495.4"
+    },
+    {
+        "country": "Iceland",
+        "x": "2588.7"
+    },
+    {
+        "country": "India",
+        "x": "7291.2"
+    },
+    {
+        "country": "Indonesia",
+        "x": "45346.5"
+    },
+    {
+        "country": "Iran",
+        "x": "25270.6"
+    },
+    {
+        "country": "Iraq",
+        "x": "1022.5"
+    },
+    {
+        "country": "Israel",
+        "x": "83.9"
+    },
+    {
+        "country": "Italy",
+        "x": "37672.5"
+    },
+    {
+        "country": "Jamaica",
+        "x": "220.2"
+    },
+    {
+        "country": "Japan",
+        "x": "20724.4"
+    },
+    {
+        "country": "Jersey",
+        "x": "4.6"
+    },
+    {
+        "country": "Jordan",
+        "x": "150.8"
+    },
+    {
+        "country": "Kazakhstan",
+        "x": "2002"
+    },
+    {
+        "country": "Kenya",
+        "x": "112.8"
+    },
+    {
+        "country": "Kosovo",
+        "x": "814.3"
+    },
+    {
+        "country": "Kuwait",
+        "x": "44.9"
+    },
+    {
+        "country": "Kyrgyzstan",
+        "x": "3652.3"
+    },
+    {
+        "country": "Laos",
+        "x": "294.2"
+    },
+    {
+        "country": "Lebanon",
+        "x": "160"
+    },
+    {
+        "country": "Lesotho",
+        "x": "29.4"
+    },
+    {
+        "country": "Liberia",
+        "x": "9.9"
+    },
+    {
+        "country": "Libya",
+        "x": "83.7"
+    },
+    {
+        "country": "Liechtenstein",
+        "x": "49.6"
+    },
+    {
+        "country": "Luxembourg",
+        "x": "14.3"
+    },
+    {
+        "country": "Macedonia",
+        "x": "2560.9"
+    },
+    {
+        "country": "Madagascar",
+        "x": "87.4"
+    },
+    {
+        "country": "Malawi",
+        "x": "537.4"
+    },
+    {
+        "country": "Malaysia",
+        "x": "184"
+    },
+    {
+        "country": "Mali",
+        "x": "5.2"
+    },
+    {
+        "country": "Mauritania",
+        "x": "116.1"
+    },
+    {
+        "country": "Mexico",
+        "x": "90052.89"
+    },
+    {
+        "country": "Moldova",
+        "x": "4.9"
+    },
+    {
+        "country": "Monaco",
+        "x": "4.7"
+    },
+    {
+        "country": "Mongolia",
+        "x": "1513.9"
+    },
+    {
+        "country": "Montenegro",
+        "x": "2359.5"
+    },
+    {
+        "country": "Montserrat",
+        "x": "44.2"
+    },
+    {
+        "country": "Morocco",
+        "x": "6049.3"
+    },
+    {
+        "country": "Mozambique",
+        "x": "913.8"
+    },
+    {
+        "country": "Myanmar",
+        "x": "7732.6"
+    },
+    {
+        "country": "Namibia",
+        "x": "68.6"
+    },
+    {
+        "country": "Nepal",
+        "x": "3182.7"
+    },
+    {
+        "country": "Netherlands",
+        "x": "324.2"
+    },
+    {
+        "country": "New Caledonia",
+        "x": "9.9"
+    },
+    {
+        "country": "New Zealand",
+        "x": "13513.3"
+    },
+    {
+        "country": "Nicaragua",
+        "x": "2279.7"
+    },
+    {
+        "country": "Nigeria",
+        "x": "4.5"
+    },
+    {
+        "country": "North Korea",
+        "x": "56.7"
+    },
+    {
+        "country": "Northern Cyprus",
+        "x": "233.5"
+    },
+    {
+        "country": "Northern Mariana Islands",
+        "x": "64.6"
+    },
+    {
+        "country": "Norway",
+        "x": "947.2"
+    },
+    {
+        "country": "Ocean",
+        "x": "1752961.48"
+    },
+    {
+        "country": "Pakistan",
+        "x": "9883.1"
+    },
+    {
+        "country": "Panama",
+        "x": "2234.5"
+    },
+    {
+        "country": "Papua New Guinea",
+        "x": "33690.8"
+    },
+    {
+        "country": "Paraguay",
+        "x": "16.7"
+    },
+    {
+        "country": "Peru",
+        "x": "17660.6"
+    },
+    {
+        "country": "Philippines",
+        "x": "12810.8"
+    },
+    {
+        "country": "Poland",
+        "x": "19353.8"
+    },
+    {
+        "country": "Portugal",
+        "x": "897.7"
+    },
+    {
+        "country": "Puerto Rico",
+        "x": "5084.6"
+    },
+    {
+        "country": "Republic of Serbia",
+        "x": "2083.8"
+    },
+    {
+        "country": "Republic of the Congo",
+        "x": "25.3"
+    },
+    {
+        "country": "Romania",
+        "x": "3423.3"
+    },
+    {
+        "country": "Russia",
+        "x": "18143.4"
+    },
+    {
+        "country": "Rwanda",
+        "x": "78"
+    },
+    {
+        "country": "Saint Kitts and Nevis",
+        "x": "9.4"
+    },
+    {
+        "country": "Saint Lucia",
+        "x": "59.2"
+    },
+    {
+        "country": "Saudi Arabia",
+        "x": "492.9"
+    },
+    {
+        "country": "Siachen Glacier",
+        "x": "83.4"
+    },
+    {
+        "country": "Slovakia",
+        "x": "122.9"
+    },
+    {
+        "country": "Slovenia",
+        "x": "2856.1"
+    },
+    {
+        "country": "Solomon Islands",
+        "x": "2267.4"
+    },
+    {
+        "country": "Somalia",
+        "x": "4.9"
+    },
+    {
+        "country": "Somaliland",
+        "x": "80.8"
+    },
+    {
+        "country": "South Africa",
+        "x": "5968.6"
+    },
+    {
+        "country": "South Georgia and South Sandwich Islands",
+        "x": "5"
+    },
+    {
+        "country": "South Korea",
+        "x": "24.2"
+    },
+    {
+        "country": "South Sudan",
+        "x": "337.1"
+    },
+    {
+        "country": "Spain",
+        "x": "16520.4"
+    },
+    {
+        "country": "Sudan",
+        "x": "31"
+    },
+    {
+        "country": "Swaziland",
+        "x": "5.4"
+    },
+    {
+        "country": "Sweden",
+        "x": "506"
+    },
+    {
+        "country": "Switzerland",
+        "x": "4090.9"
+    },
+    {
+        "country": "Syria",
+        "x": "163.2"
+    },
+    {
+        "country": "Taiwan",
+        "x": "4004.4"
+    },
+    {
+        "country": "Tajikistan",
+        "x": "11134.3"
+    },
+    {
+        "country": "Thailand",
+        "x": "247.3"
+    },
+    {
+        "country": "Tonga",
+        "x": "10.4"
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "x": "450.9"
+    },
+    {
+        "country": "Tunisia",
+        "x": "224.6"
+    },
+    {
+        "country": "Turkey",
+        "x": "60165.3"
+    },
+    {
+        "country": "Turkmenistan",
+        "x": "866.7"
+    },
+    {
+        "country": "Uganda",
+        "x": "333.6"
+    },
+    {
+        "country": "Ukraine",
+        "x": "77.6"
+    },
+    {
+        "country": "United Arab Emirates",
+        "x": "29.8"
+    },
+    {
+        "country": "United Kingdom",
+        "x": "626.4"
+    },
+    {
+        "country": "United Republic of Tanzania",
+        "x": "1384.5"
+    },
+    {
+        "country": "United States Virgin Islands",
+        "x": "58.6"
+    },
+    {
+        "country": "United States of America",
+        "x": "481145.21"
+    },
+    {
+        "country": "Uzbekistan",
+        "x": "2118.4"
+    },
+    {
+        "country": "Vanuatu",
+        "x": "1642.1"
+    },
+    {
+        "country": "Venezuela",
+        "x": "2635.4"
+    },
+    {
+        "country": "Vietnam",
+        "x": "207.1"
+    },
+    {
+        "country": "West Bank",
+        "x": "14.8"
+    },
+    {
+        "country": "Yemen",
+        "x": "90.2"
+    },
+    {
+        "country": "Zambia",
+        "x": "614.2"
+    },
+    {
+        "country": "Zimbabwe",
+        "x": "125.5"
+    }
+]

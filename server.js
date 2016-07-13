@@ -102,7 +102,31 @@ router.get( '/F4', function ( req, res ) {
 		res.sendFile(path+'font-awesome/fonts/fontawesome-webfont.svg#fontawesomeregular');
 });
 
+router.get( '/DashG', function ( req, res ) {
+        console.log(path+'index.html');
+	// res.sendFile(path+'font-awesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular');
+		res.sendFile(path+'continents/dash_graph.html');
+});
 
+router.get( '/dash_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/country_mag.csv');
+});
+
+router.get( '/dash_graph_php', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'php/dash_graph.php');
+});
+
+router.get( '/dash_graph_json', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'json/dash_graph.json');
+});
+
+router.get( '/jquery.csv.min.js', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'php/csv_min.js');
+});
 
 
 
