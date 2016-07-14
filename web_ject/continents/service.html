@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Earthquake Service</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="/BootstrapCoreCSS" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- <link href="css/sb-admin.css" rel="stylesheet"> -->
+    <link href="/CustomCSS" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <!-- <link href="css/plugins/morris.css" rel="stylesheet"> -->
+    <link href="/MorrisChartsCSS" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="/CustomFonts" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Earthquake Service</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Kundjanasith Thonglek</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>John Smith</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Kundjanasith Thonglek <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="/home"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                    </li>
+                    <li>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                    </li>
+                    <li>
+                        <a href="/Service"><i class="fa fa-fw fa-wrench"></i>Service</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Service <small>Machine Learning</small>
+                        </h1>
+                        <!-- <ol class="breadcrumb">
+                            <li class="active" >
+                                <i class="fa fa-dashboard"></i> Continent
+                            </li>
+                            <div >
+                                <iframe class="col-lg-12"  width=window.Width height="500" src="/llN" style="border:none" ></iframe>
+                            </div>
+                            <div class="row carousel-holder">
+
+                            </div>
+                        </ol> -->
+                    </div>
+                </div>
+
+
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">Predict Earthquake</a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">Description: </div>
+
+                    <!-- <div class="row"> -->
+                    <div class="panel-body">
+                      <select id="year" class="col-xs-6 col-sm-4 huge" ></select>
+                      <button id="showYear" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickYear()" style="display:block;">Confirm</button>
+                      <button id="editYear" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editYear()">Edit</button>
+                    </div>
+
+                    <div id="setMonth" class="panel-body"  style="display:none;">
+                      <select id="month" class="col-xs-6 col-sm-4 huge"></select>
+                      <button id="showMonth" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickMonth()" style="display:block;">Confirm</button>
+                      <button id="editMonth" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editMonth()">Edit</button>
+                    </div>
+
+                    <div id="setFromDay" class="panel-body"  style="display:none;">
+                      <div class="col-xs-6 col-sm-4 panel-body">Started Date: </div>
+                      <select id="fromday" class="col-xs-6 col-sm-4 huge"></select>
+                      <button id="showFromDay" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickFromDay()" style="display:block;">Confirm</button>
+                      <script>
+                      function clickFromDay(){
+                        var ye = document.getElementById("fromday");
+                        ye.disabled = true;
+                        var buy = document.getElementById("showFromDay");
+                        var ed = document.getElementById("editFromDay");
+                        var td = document.getElementById("setToDay");
+                        buy.style.display="none"
+                        ed.style.display="block"
+                        td.style.display="block"
+
+                        var elm = document.getElementById('today'), df = document.createDocumentFragment();
+                        var yex = document.getElementById("year");
+                        var mo = document.getElementById("month");
+                        var num_month = [31,28,31,30,31,30,31,31,30,31,30,31];
+                        if(yex.value%4==0){
+                          console.log("Leap");
+                          num_month[1] = 29;
+                        }
+                        var NM = num_month[mo.selectedIndex];
+                        console.log("TT"+ye.value+mo.value);
+                        for (var i = ye.selectedIndex+1 ; i <= NM; i++) {
+                          var option = document.createElement('option');
+                          option.value = i;
+                          option.appendChild(document.createTextNode("Day: " + i));
+                          df.appendChild(option);
+                        }
+                        elm.appendChild(df);
+                      }
+                      </script>
+                      <button id="editFromDay" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editFromDay()">Edit</button>
+                      <script>
+                      function editFromDay(){
+                        var ye = document.getElementById("fromday");
+                        ye.disabled = false;
+                        var buy = document.getElementById("showFromDay");
+                        var ed = document.getElementById("editFromDay");
+                        buy.style.display="block"
+                        ed.style.display="none"
+                        var bu = document.getElementById("setToDay");
+                        bu.style.display="none"
+                      }
+                      </script>
+                    </div>
+
+                    <!-- <div id="setToDay" class="panel-body"  style="display:none;">
+                      <div class="col-xs-6 col-sm-4 panel-body">Ended Date: </div>
+                      <select id="today" class="col-xs-6 col-sm-4 huge"></select>
+                      <button id="showToDay" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickToDay()" style="display:block;">Confirm</button>
+                      <script>
+                      function clickToDay(){
+                        var ye = document.getElementById("today");
+                        ye.disabled = true;
+                        var buy = document.getElementById("showToDay");
+                        var ed = document.getElementById("editToDay");
+                        buy.style.display="none"
+                        ed.style.display="block"
+
+                      }
+                      </script>
+                      <button id="editToDay" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editToDay()">Edit</button>
+                      <script>
+                      function editToDay(){
+                        var ye = document.getElementById("today");
+                        ye.disabled = true;
+                        var buy = document.getElementById("showToDay");
+                        var ed = document.getElementById("editToDay");
+                        buy.style.display="none"
+                        ed.style.display="block"
+                      }
+                      </script>
+                    </div> -->
+
+                    <div id="setToDay" class="panel-body"  style="display:none;">
+                      <div class="col-xs-6 col-sm-4 panel-body">Ended Date: </div>
+                      <select id="today" class="col-xs-6 col-sm-4 huge"></select>
+                      <button id="showToDay" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickToDay()" style="display:block;">Confirm</button>
+                      <script>
+                      function clickToDay(){
+                        var fe = document.getElementById("fromday");
+                        var mon = document.getElementById("month");
+                        var m = ["January","Febuary","March","April","May","June","July","August","September","October","November","December"];
+                        var ar = document.getElementById("year");
+                        var ye = document.getElementById("today");
+                        ye.disabled = true;
+                        var buy = document.getElementById("showToDay");
+                        var ed = document.getElementById("editToDay");
+                        buy.style.display="none"
+                        ed.style.display="block"
+                        var ted = document.getElementById("summa");
+                        ted.style.display="block"
+                        var text = document.getElementById("sumText");
+                        var Ntext = document.getElementById("numText");
+                        text.textContent = "Started Date:"+fe.value+"/"+m[mon.selectedIndex]+"/"+ar.value+" -- Ended Date:"+ye.value+"/"+m[mon.selectedIndex]+"/"+ar.value;
+                        Ntext.textContent = "Number of days : "+ ((parseInt(ye.value)-parseInt(fe.value))+parseInt(1));
+                        var co = document.getElementById("setCountry");
+                        co.style.display="block"
+
+                        var x1 = document.getElementById('country'), df = document.createDocumentFragment();
+                        var x2 = ["Afghanistan","Albania","Algeria","American","Andorra","Angola","Anguilla","Antarctica","Antigua and Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei Darussalam","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central African Republic","Chad","Chile","China","Christmas Island","Cocos Islands","Colombia","Comoros","Kinshasa","Congo","Cook Islands","Costa Rica","Ivory Coast","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Guiana","French Polynesia","French Southern Territories","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Great Britain","Greece","Green land","Grenada","Guadeloupe","Guam","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Holy See","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","North Korea","South Korea","Kosovo","Kuwait","Kyrgyzstan","Lao","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Martinique","Mauritania","Mauritius","Mayotte","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Niue","Northern Mariana Islands","Norway","Oman","Pakistan","Palau","Palestinian territories","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Pitcairn Island","Poland","Portugal","Puerto Rico","Qatar","Reunion Island","Romania","Russian Federation","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Tibet","Timor-Leste","Togo","Tokelau","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Turks and Caicos Islands","Tuvalu","Ugandax","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City State","Venezuela","Vietnam","Virgin Islands (British)","Virgin Islands (U.S.)","Wallis and Futuna Islands","Western Sahara","Yemen","Zambia","Zimbabwe"];
+                        for (var i = 0 ; i <x2.length ; i++) {
+                          var option = document.createElement('option');
+                          option.value = i;
+                          option.appendChild(document.createTextNode( x2[i]));
+                          df.appendChild(option);
+                        }
+                        x1.appendChild(df);
+                      }
+                      </script>
+                      <button id="editToDay" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editToDay()">Edit</button>
+                      <script>
+                      function editToDay(){
+                        var ye = document.getElementById("today");
+                        ye.disabled = true;
+                        var buy = document.getElementById("showToDay");
+                        var ed = document.getElementById("editToDay");
+                        buy.style.display="none"
+                        ed.style.display="block"
+                      }
+                      </script>
+                    </div>
+
+                    <div id="summa" class="panel-body"  style="display:none;">
+                      <div id="sumText" class="col-xs-12 col-sm-12 panel-body"></div>
+                      <div id="numText" class="col-xs-12 col-sm-12 panel-body"></div>
+                    </div>
+
+                    <div id="setCountry" class="panel-body"  style="display:none;">
+                      <div class="col-xs-6 col-sm-4 panel-body">Country: </div>
+                      <select id="country" class="col-xs-6 col-sm-4 huge"></select>
+                      <button id="showCountry" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickCountry()" style="display:block;">Confirm</button>
+                      <script>
+
+                      </script>
+                      <button id="editCountry" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editCountry()">Edit</button>
+                      <script>
+
+                      </script>
+                    </div>
+
+
+
+
+
+
+                    <script>
+                    (function() {
+                      var elm = document.getElementById('month'), df = document.createDocumentFragment();
+                      var m = ["January","Febuary","March","April","May","June","July","August","September","October","November","December"];
+                      for (var i = 0 ; i <= 11; i++) {
+                        var option = document.createElement('option');
+                        option.value = i;
+                        option.appendChild(document.createTextNode("Month: " + m[i]));
+                        df.appendChild(option);
+                      }
+                      elm.appendChild(df);
+                    }());
+                    function clickMonth(){
+                      var ye = document.getElementById("month");
+                      var buy = document.getElementById("showMonth");
+                      var ed = document.getElementById("editMonth");
+                      var mm = document.getElementById("setFromDay");
+                      ye.disabled = true;
+                      buy.style.display="none"
+                      ed.style.display="block"
+                      mm.style.display="block"
+                      console.log(ye.value);
+                      // function initFromDay() {
+                        var elm = document.getElementById('fromday'), df = document.createDocumentFragment();
+                        var yex = document.getElementById("year");
+                        var mo = document.getElementById("month");
+                        var num_month = [31,28,31,30,31,30,31,31,30,31,30,31];
+                        if(yex.value%4==0){
+                          console.log("Leap");
+                          num_month[1] = 29;
+                        }
+                        var NM = num_month[mo.selectedIndex];
+                        console.log("TT"+ye.value+mo.value);
+                        for (var i = 1 ; i <= NM; i++) {
+                          var option = document.createElement('option');
+                          option.value = i;
+                          option.appendChild(document.createTextNode("Day: " + i));
+                          df.appendChild(option);
+                        }
+                        elm.appendChild(df);
+                      // }
+                    }
+                    </script>
+
+                      <script>
+                      (function() {
+                        var elm = document.getElementById('year'), df = document.createDocumentFragment();
+                        for (var i = 2016 ; i <= 2500; i++) {
+                          var option = document.createElement('option');
+                          option.value = i;
+                          option.appendChild(document.createTextNode("Year: " + i));
+                          df.appendChild(option);
+                        }
+                        elm.appendChild(df);
+                      }());
+                      function clickYear(){
+                        var ye = document.getElementById("year");
+                        var buy = document.getElementById("showYear");
+                        var ed = document.getElementById("editYear");
+                        var mm = document.getElementById("setMonth");
+                        ye.disabled = true;
+                        buy.style.display="none"
+                        ed.style.display="block"
+                        mm.style.display="block"
+                        console.log(ye.value);
+
+                      }
+                      </script>
+
+                      <script>
+                      function editYear(){
+                        var ye = document.getElementById("year");
+                        var buy = document.getElementById("showYear");
+                        var ed = document.getElementById("editYear");
+                        var mm = document.getElementById("setMonth");
+                        var fd = document.getElementById("setFromDay");
+                        ye.disabled = false;
+                        mm.style.display="none"
+                        fd.style.display="none"
+                        buy.style.display="block"
+                        ed.style.display="none"
+                        console.log(ye.value);
+                      }
+                      </script>
+
+                      <script>
+                      function editMonth(){
+                        var ye = document.getElementById("month");
+                        var buy = document.getElementById("showMonth");
+                        var ed = document.getElementById("editMonth");
+                        var mm = document.getElementById("setFromDay");
+                        ye.disabled = false;
+                        mm.style.display="none"
+                        buy.style.display="block"
+                        ed.style.display="none"
+                        console.log(ye.value);
+                      }
+                      </script>
+
+
+                    </div>
+
+
+                      <!-- <div class="panel-footer">Panel Footer</div> -->
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="/jQuery"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="/BootstrapCoreJavaScript"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <!-- <script src="js/plugins/morris/raphael.min.js"></script> -->
+    <script src="/Raphael"></script>
+    <!-- <script src="js/plugins/morris/morris.min.js"></script> -->
+    <script src="/Morris"></script>
+    <!-- <script src="js/plugins/morris/morris-data.js"></script> -->
+    <script src="/MorrisData"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiHD7Le3qmtWVVMOp_7_VuTjyuXYvBia4&callback=initMap"type="text/javascript"></script> -->
+      <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiHD7Le3qmtWVVMOp_7_VuTjyuXYvBia4 "type="text/javascript"></script> -->
+    <script type="text/javascript"> // load the visualisation API
+     google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+    </script>
+    <script type="text/javascript">
+      // google.charts.load('current', {'packages':['geochart']});
+  google.charts.load('current', { 'packages': ['map'] });
+  google.setOnLoadCallback(drawVisualization)
+  function drawVisualization() {
+  var xtemp = $.get("/lln_csv", function(csvString) {
+     // transform the CSV string into a 2-dimensional array
+     var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+    // console.log(arrayData);
+     // this new DataTable object holds all the data
+     var data = new google.visualization.arrayToDataTable(arrayData);
+     console.log("PP");
+     console.log(data);
+      var options = { showTip: true };
+       var chart = new google.visualization.Map(document.getElementById('regions_div'));
+       chart.draw(data, options);
+    });
+    }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 1000px; height: 450px;"></div>
+  </body>
+</html>

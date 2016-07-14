@@ -28,6 +28,11 @@ router.get( '/CustomCSS', function ( req, res ) {
 	res.sendFile(path+'css/sb-admin.css');
 });
 
+router.get( '/Service', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/service.html');
+});
+
 router.get( '/CustomCSSRTL', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'css/sb-admin-rtl.css');
@@ -108,6 +113,26 @@ router.get( '/DashG', function ( req, res ) {
 		res.sendFile(path+'continents/dash_graph.html');
 });
 
+router.get( '/fonts/glyphicons-halflings-regular.woff2', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'fonts/glyphicons-halflings-regular.woff2');
+});
+
+router.get( '/fonts/glyphicons-halflings-regular.woff', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'fonts/glyphicons-halflings-regular.woff');
+});
+
+router.get( '/fonts/glyphicons-halflings-regular.ttf', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'fonts/glyphicons-halflings-regular.ttf');
+});
+
+router.get( '/llN', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'continents/lln.html');
+});
+
 router.get( '/dash_graph_csv', function ( req, res ) {
         console.log(path+'index.html');
 		res.sendFile(path+'data/country_mag.csv');
@@ -121,6 +146,11 @@ router.get( '/dash_graph_php', function ( req, res ) {
 router.get( '/dash_graph_json', function ( req, res ) {
         console.log(path+'index.html');
 		res.sendFile(path+'json/dash_graph.json');
+});
+
+router.get( '/lln_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/lln.csv');
 });
 
 router.get( '/jquery.csv.min.js', function ( req, res ) {
