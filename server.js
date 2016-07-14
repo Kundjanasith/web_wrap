@@ -135,7 +135,7 @@ router.get( '/llN', function ( req, res ) {
 
 router.get( '/dash_graph_csv', function ( req, res ) {
         console.log(path+'index.html');
-		res.sendFile(path+'data/country_mag.csv');
+		res.sendFile(path+'data/country_fre.csv');
 });
 
 router.get( '/dash_graph_php', function ( req, res ) {
