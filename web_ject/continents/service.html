@@ -340,12 +340,7 @@
                         var ed = document.getElementById("editToDay");
                         buy.style.display="none"
                         ed.style.display="block"
-                        var ted = document.getElementById("summa");
-                        ted.style.display="block"
-                        var text = document.getElementById("sumText");
-                        var Ntext = document.getElementById("numText");
-                        text.textContent = "Started Date:"+fe.value+"/"+m[mon.selectedIndex]+"/"+ar.value+" -- Ended Date:"+ye.value+"/"+m[mon.selectedIndex]+"/"+ar.value;
-                        Ntext.textContent = "Number of days : "+ ((parseInt(ye.value)-parseInt(fe.value))+parseInt(1));
+
                         var co = document.getElementById("setCountry");
                         co.style.display="block"
 
@@ -373,16 +368,34 @@
                       </script>
                     </div>
 
-                    <div id="summa" class="panel-body"  style="display:none;">
-                      <div id="sumText" class="col-xs-12 col-sm-12 panel-body"></div>
-                      <div id="numText" class="col-xs-12 col-sm-12 panel-body"></div>
-                    </div>
+
 
                     <div id="setCountry" class="panel-body"  style="display:none;">
                       <div class="col-xs-6 col-sm-4 panel-body">Country: </div>
                       <select id="country" class="col-xs-6 col-sm-4 huge"></select>
                       <button id="showCountry" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickCountry()" style="display:block;">Confirm</button>
                       <script>
+                      function clickCountry(){
+                        var inp = document.getElementById("country");
+                        var x = document.getElementById("showCountry");
+                        x.style.display="none";
+                        var y = document.getElementById("editCountry");
+                        y.style.display="block";
+                        var fe = document.getElementById("fromday");
+                        var mon = document.getElementById("month");
+                        var m = ["January","Febuary","March","April","May","June","July","August","September","October","November","December"];
+                        var ar = document.getElementById("year");
+                        var ye = document.getElementById("today");
+                        var ted = document.getElementById("summa");
+                        ted.style.display="block"
+                        var text = document.getElementById("sumText");
+                        var Ntext = document.getElementById("numText");
+                        var Ctext = document.getElementById("conText");
+                        var x2 = ["Afghanistan","Albania","Algeria","American","Andorra","Angola","Anguilla","Antarctica","Antigua and Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei Darussalam","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central African Republic","Chad","Chile","China","Christmas Island","Cocos Islands","Colombia","Comoros","Kinshasa","Congo","Cook Islands","Costa Rica","Ivory Coast","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Guiana","French Polynesia","French Southern Territories","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Great Britain","Greece","Green land","Grenada","Guadeloupe","Guam","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Holy See","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","North Korea","South Korea","Kosovo","Kuwait","Kyrgyzstan","Lao","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Martinique","Mauritania","Mauritius","Mayotte","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Niue","Northern Mariana Islands","Norway","Oman","Pakistan","Palau","Palestinian territories","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Pitcairn Island","Poland","Portugal","Puerto Rico","Qatar","Reunion Island","Romania","Russian Federation","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Tibet","Timor-Leste","Togo","Tokelau","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Turks and Caicos Islands","Tuvalu","Ugandax","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City State","Venezuela","Vietnam","Virgin Islands (British)","Virgin Islands (U.S.)","Wallis and Futuna Islands","Western Sahara","Yemen","Zambia","Zimbabwe"];
+                        text.textContent = "Started Date:"+fe.value+"/"+m[mon.selectedIndex]+"/"+ar.value+" -- Ended Date:"+ye.value+"/"+m[mon.selectedIndex]+"/"+ar.value;
+                        Ntext.textContent = "Number of days : "+ ((parseInt(ye.value)-parseInt(fe.value))+parseInt(1));
+                        Ctext.textContent = "Country : " +x2[inp.value];
+                      }
 
                       </script>
                       <button id="editCountry" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editCountry()">Edit</button>
@@ -391,6 +404,23 @@
                       </script>
                     </div>
 
+                    <div id="summa" class="panel-body"  style="display:none;">
+                      <div id="sumText" class="col-xs-12 col-sm-12"></div>
+                      <div id="numText" class="col-xs-12 col-sm-12"></div>
+                      <div id="conText" class="col-xs-6 col-sm-6"></div>
+                      <script>
+                       function sendData(){
+                         var text = document.getElementById("sumText");
+                         var Ntext = document.getElementById("numText");
+                         var Ctext = document.getElementById("conText");
+                         console.log(text.innerHTML);
+                         console.log(Ntext.innerHTML);
+                         console.log(Ctext.innerHTML);
+                       }
+                      </script>
+                      <div id="goBut" class="col-xs-6 col-sm-6 btn btn-success" onclick="sendData()">Go!</div>
+
+                    </div>
 
 
 
