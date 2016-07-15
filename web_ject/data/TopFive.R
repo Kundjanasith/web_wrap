@@ -4,7 +4,8 @@ df1 <- read.csv('data_clean0.csv')
 # df1 <- subset(df1, continent=="Europe")
 # df1 <- subset(df1, continent=="Africa")
 # df1 <- subset(df1, continent=="Australia")
-df1 <- subset(df1, continent=="Asia")
+# df1 <- subset(df1, continent=="Asia")
+df1 <- subset(df1, continent=="North America")
 
 df1$Count <- 1
 
@@ -70,4 +71,5 @@ print(res)
 # write.csv(res,file="eu4.csv",row.names=FALSE)
 # write.csv(res,file="af4.csv",row.names=FALSE)
 # write.csv(res,file="au4.csv",row.names=FALSE)
-write.csv(res,file="as4.csv",row.names=FALSE)
+# write.csv(res,file="as4.csv",row.names=FALSE)
+write.csv(res,file="na4.csv",row.names=FALSE)
