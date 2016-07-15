@@ -9,7 +9,7 @@
       google.charts.load('current', {packages:['bar']});
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
-      var xtemp = $.get("/eu5_graph_csv", function(csvString) {
+      var xtemp = $.get("/af5_graph_csv", function(csvString) {
          // transform the CSV string into a 2-dimensional array
          var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
         // console.log(arrayData);

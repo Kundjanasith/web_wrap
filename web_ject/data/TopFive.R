@@ -1,7 +1,8 @@
 
-df1 <- read.csv('web_ject/data/data_clean0.csv')
+df1 <- read.csv('data_clean0.csv')
 
-df1 <- subset(df1, continent=="Europe")
+# df1 <- subset(df1, continent=="Europe")
+df1 <- subset(df1, continent=="Africa")
 
 df1$Count <- 1
 
@@ -56,12 +57,13 @@ print(res)
 
 # print(names(res))
 
-names(res)[3] <- paste("[ 4.0 - 4.9 ]")
-names(res)[4] <- paste("[ 5.0 - 5.9 ]")
-names(res)[5] <- paste("[ 6.0 - 6.9 ]")
-names(res)[6] <- paste("[ 7.0 - 7.9 ]")
-names(res)[7] <- paste("[ 8.0 - 12.0 ]")
+names(res)[3] <- paste("[4.0 - 4.9]")
+names(res)[4] <- paste("[5.0 - 5.9]")
+names(res)[5] <- paste("[6.0 - 6.9]")
+names(res)[6] <- paste("[7.0 - 7.9]")
+names(res)[7] <- paste("[8.0 - 12.0]")
 
 print(res)
 
-write.csv(res,file="eu4.csv",row.names=FALSE)
+# write.csv(res,file="eu4.csv",row.names=FALSE)
+write.csv(res,file="af4.csv",row.names=FALSE)

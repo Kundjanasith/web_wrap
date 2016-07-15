@@ -1,0 +1,14 @@
+
+file <- read.csv('data_clean0.csv')
+
+file <- subset(file, continent=="Africa")
+
+file <- subset(file, mag>=6)
+
+file <- file[c('latitude','longitude','mag')]
+
+names(file)[1] <- paste("Lat")
+names(file)[2] <- paste("Long")
+names(file)[3] <- paste("Magnitude")
+
+write.csv(file,file="af.csv",row.names=FALSE)
