@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="/jquery.csv.min.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      var xtemp = $.get("/eu2_graph_csv", function(csvString) {
+         // transform the CSV string into a 2-dimensional array
+         var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
+        // console.log(arrayData);
+         // this new DataTable object holds all the data
+         var data = new google.visualization.arrayToDataTable(arrayData);
+         console.log("PP");
+         console.log(data);
+           var options = {
+            //  title: 'Magnitude',
+             backgroundColor: '#DCDCDC',
+             is3D: true,
+             legend: {position: 'left'}
+           };
+          //  var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+           var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+           chart.draw(data, options);
+        });
+        }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; "></div>
+  </body>
+</html>

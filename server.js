@@ -13,6 +13,66 @@ router.get( '/home', function ( req, res ) {
 	res.sendFile(path+'index.html');
 });
 
+router.get( '/D3MIN', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'js/d3.min.js');
+});
+
+router.get( '/Europe', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'Europe.html');
+});
+
+router.get( '/EuG', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph.html');
+});
+
+router.get( '/EuG1', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph1.html');
+});
+
+router.get( '/EuG2', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph2.html');
+});
+
+router.get( '/EuG3', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph3.html');
+});
+
+router.get( '/EuG4', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph4.html');
+});
+
+router.get( '/EuG5', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph5.html');
+});
+
+router.get( '/EuG6', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph6.html');
+});
+
+router.get( '/EuG7', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph7.html');
+});
+
+router.get( '/EuG8', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph8.html');
+});
+
+router.get( '/EuG9', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/eu_graph9.html');
+});
+
 router.get( '/BootstrapCoreCSS', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'css/bootstrap.min.css');
@@ -136,6 +196,36 @@ router.get( '/llN', function ( req, res ) {
 router.get( '/dash_graph_csv', function ( req, res ) {
         console.log(path+'index.html');
 		res.sendFile(path+'data/country_fre.csv');
+});
+
+router.get( '/eu_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/eu.csv');
+});
+
+router.get( '/eu1_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/eu1.csv');
+});
+
+router.get( '/eu2_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/eu2.csv');
+});
+
+router.get( '/eu3_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/eu3.csv');
+});
+
+router.get( '/eu4_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/eu4.csv');
+});
+
+router.get( '/eu5_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/eu5.csv');
 });
 
 router.get( '/dash_graph_php', function ( req, res ) {
