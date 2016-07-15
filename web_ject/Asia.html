@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Earthquake Service</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="/BootstrapCoreCSS" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- <link href="css/sb-admin.css" rel="stylesheet"> -->
+    <link href="/CustomCSS" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <!-- <link href="css/plugins/morris.css" rel="stylesheet"> -->
+    <link href="/MorrisChartsCSS" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="/CustomFonts" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Earthquake Service</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Great earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 8.0 - 12.0 Magnitude ]</p>
+                                          <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Major earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 7.0 - 7.9 Magnitude ]</p>
+                                        <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Strong earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 6.0 - 6.9 Magnitude ]</p>
+                                        <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Moderate earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 5.0 - 5.9 Magnitude ]</p>
+                                        <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Light earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 4.0 - 4.9 Magnitude ]</p>
+                                      <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Kundjanasith Thonglek <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="/home"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                    </li>
+                    <li>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                    </li>
+                    <li>
+                        <a href="/Service"><i class="fa fa-fw fa-wrench"></i>Service</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Dropdown Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Asia
+                            <!-- <small>Statistics Overview</small> -->
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li class="active" >
+                                <i class="fa fa-dashboard"></i> Continent
+                            </li>
+                            <div class="row carousel-holder">
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <iframe  align='center' width="1150" height="500" src="/AsG" style="border:none"  alt=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </ol>
+
+                    </div>
+                </div>
+
+                <!-- /.row -->
+                <!-- /.row -->
+
+
+
+
+                <div class="row">
+              <ol class="col-md-5 breadcrumb">
+                      <li class="active" >
+                          <i class="fa fa-dashboard"></i> Magnitude
+                      </li>
+                      <div class="row carousel-holder">
+              <div class="col-md-12">
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                          <div >
+                              <iframe align='center' width="500" height="300" src="/AsG2" style="border:none"  alt=""></iframe>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </ol>
+          <div class="col-md-2">
+          </div>
+          <ol class="col-md-5 breadcrumb">
+                  <li class="active" >
+                      <i class="fa fa-dashboard"></i> Depth
+                  </li>
+                  <div class="row carousel-holder">
+          <div class="col-md-12">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                      <div >
+                          <iframe  align='center' width="500"  height="300" src="/AsG3" style="border:none"  alt=""></iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </ol>
+    </div>
+
+<div class="row">
+  <ol class="col-md-5 breadcrumb">
+          <li class="active" >
+              <i class="fa fa-dashboard"></i> Magnitude
+          </li>
+          <div class="row carousel-holder">
+  <div class="col-md-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div >
+                  <iframe align='center' width="500" height="300" src="/AsG4" style="border:none"  alt=""></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</ol>
+<div class="col-md-2">
+</div>
+<ol class="col-md-5 breadcrumb">
+      <li class="active" >
+          <i class="fa fa-dashboard"></i> Depth
+      </li>
+      <div class="row carousel-holder">
+<div class="col-md-12">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div >
+              <iframe  align='center' width="500"  height="300" src="/AsG5" style="border:none"  alt=""></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</ol>
+</div>
+
+<div class="row">
+  <ol class="col-md-2 breadcrumb">
+          <li class="active" >
+              <i class="fa fa-dashboard"></i> Magnitude
+          </li>
+          <div class="row carousel-holder">
+  <div class="col-md-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" align='center'>
+              <div >
+                  <iframe align='center' width="200" height="200" src="/AsG6" style="border:none"  alt=""></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</ol>
+<!-- <div class="col-md-6"> -->
+<div class="col-md-1">
+</div>
+
+  <ol class="col-md-5 breadcrumb">
+        <li class="active" >
+            <i class="fa fa-dashboard"></i> Summary
+        </li>
+        <div class="row carousel-holder">
+  <div class="col-md-12">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" align='center'>
+            <div >
+                <iframe  align='center' width="500"  height="200" src="/AsG8" style="border:none"  alt=""></iframe>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  </ol>
+  <div class="col-md-1">
+</div>
+
+<ol class="col-md-3 breadcrumb">
+      <li class="active" >
+          <i class="fa fa-dashboard"></i> Depth
+      </li>
+      <div class="row carousel-holder">
+<div class="col-md-12">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" align='center'>
+          <div >
+              <iframe  align='center' width="200"  height="200" src="/AsG7" style="border:none"  alt=""></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</ol>
+</div>
+
+<!-- <ol class="col-md-12 breadcrumb">
+      <li class="active" >
+          <i class="fa fa-dashboard"></i> Magnitude Depth
+      </li>
+      <div class="row carousel-holder">
+<div class="col-md-12">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" align='center'>
+          <div > -->
+              <iframe  class="col-md-12 center" align='center' width="2000"  height="500" src="/AsG9" style="border:none"  alt=""></iframe>
+          <!-- </div>
+      </div>
+  </div>
+</div>
+</div>
+</ol>
+</div> -->
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="/jQuery"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="/BootstrapCoreJavaScript"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <!-- <script src="js/plugins/morris/raphael.min.js"></script> -->
+    <script src="/Raphael"></script>
+    <!-- <script src="js/plugins/morris/morris.min.js"></script> -->
+    <script src="/Morris"></script>
+    <!-- <script src="js/plugins/morris/morris-data.js"></script> -->
+    <script src="/MorrisData"></script>
+
+</body>
+
+</html>

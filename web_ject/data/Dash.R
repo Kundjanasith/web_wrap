@@ -2,7 +2,8 @@
 file <- read.csv('data_clean0.csv')
 
 # file <- subset(file, continent=="Africa")
-file <- subset(file, continent=="Australia")
+# file <- subset(file, continent=="Australia")
+file <- subset(file, continent=="Asia")
 
 file <- subset(file, mag>=6)
 
@@ -13,4 +14,5 @@ names(file)[2] <- paste("Long")
 names(file)[3] <- paste("Magnitude")
 
 # write.csv(file,file="af.csv",row.names=FALSE)
-write.csv(file,file="au.csv",row.names=FALSE)
+# write.csv(file,file="au.csv",row.names=FALSE)
+write.csv(file,file="as.csv",row.names=FALSE)

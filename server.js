@@ -33,6 +33,11 @@ router.get( '/Australia', function ( req, res ) {
 	res.sendFile(path+'Australia.html');
 });
 
+router.get( '/Asia', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'Asia.html');
+});
+
 router.get( '/EuG', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/eu_graph.html');
@@ -46,6 +51,11 @@ router.get( '/AfG', function ( req, res ) {
 router.get( '/AuG', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/au_graph.html');
+});
+
+router.get( '/AsG', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph.html');
 });
 
 router.get( '/EuG1', function ( req, res ) {
@@ -68,6 +78,11 @@ router.get( '/AuG2', function ( req, res ) {
 	res.sendFile(path+'continents/au_graph2.html');
 });
 
+router.get( '/AsG2', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph2.html');
+});
+
 router.get( '/EuG3', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/eu_graph3.html');
@@ -81,6 +96,11 @@ router.get( '/AfG3', function ( req, res ) {
 router.get( '/AuG3', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/au_graph3.html');
+});
+
+router.get( '/AsG3', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph3.html');
 });
 
 router.get( '/EuG4', function ( req, res ) {
@@ -98,6 +118,11 @@ router.get( '/AuG4', function ( req, res ) {
 	res.sendFile(path+'continents/au_graph4.html');
 });
 
+router.get( '/AsG4', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph4.html');
+});
+
 router.get( '/EuG5', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/eu_graph5.html');
@@ -111,6 +136,11 @@ router.get( '/AfG5', function ( req, res ) {
 router.get( '/AuG5', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/au_graph5.html');
+});
+
+router.get( '/AsG5', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph5.html');
 });
 
 router.get( '/EuG6', function ( req, res ) {
@@ -128,6 +158,11 @@ router.get( '/AuG6', function ( req, res ) {
 	res.sendFile(path+'continents/au_graph6.html');
 });
 
+router.get( '/AsG6', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph6.html');
+});
+
 router.get( '/EuG7', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/eu_graph7.html');
@@ -141,6 +176,11 @@ router.get( '/AfG7', function ( req, res ) {
 router.get( '/AuG7', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/au_graph7.html');
+});
+
+router.get( '/AsG7', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph7.html');
 });
 
 router.get( '/EuG8', function ( req, res ) {
@@ -158,6 +198,11 @@ router.get( '/AuG8', function ( req, res ) {
 	res.sendFile(path+'continents/au_graph8.html');
 });
 
+router.get( '/AsG8', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph8.html');
+});
+
 router.get( '/EuG9', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/eu_graph9.html');
@@ -171,6 +216,11 @@ router.get( '/AfG9', function ( req, res ) {
 router.get( '/AuG9', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'continents/au_graph9.html');
+});
+
+router.get( '/AsG9', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'continents/as_graph9.html');
 });
 
 router.get( '/BootstrapCoreCSS', function ( req, res ) {
@@ -313,6 +363,11 @@ router.get( '/au_graph_csv', function ( req, res ) {
 		res.sendFile(path+'data/au.csv');
 });
 
+router.get( '/as_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/as.csv');
+});
+
 router.get( '/eu1_graph_csv', function ( req, res ) {
         console.log(path+'index.html');
 		res.sendFile(path+'data/eu1.csv');
@@ -326,6 +381,11 @@ router.get( '/eu2_graph_csv', function ( req, res ) {
 router.get( '/af2_graph_csv', function ( req, res ) {
         console.log(path+'index.html');
 		res.sendFile(path+'data/af2.csv');
+});
+
+router.get( '/as2_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/as2.csv');
 });
 
 router.get( '/au2_graph_csv', function ( req, res ) {
@@ -348,6 +408,11 @@ router.get( '/au3_graph_csv', function ( req, res ) {
 		res.sendFile(path+'data/au3.csv');
 });
 
+router.get( '/as3_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/as3.csv');
+});
+
 router.get( '/eu4_graph_csv', function ( req, res ) {
         console.log(path+'index.html');
 		res.sendFile(path+'data/eu4.csv');
@@ -363,6 +428,11 @@ router.get( '/au4_graph_csv', function ( req, res ) {
 		res.sendFile(path+'data/au4.csv');
 });
 
+router.get( '/as4_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/as4.csv');
+});
+
 router.get( '/eu5_graph_csv', function ( req, res ) {
         console.log(path+'index.html');
 		res.sendFile(path+'data/eu5.csv');
@@ -376,6 +446,11 @@ router.get( '/af5_graph_csv', function ( req, res ) {
 router.get( '/au5_graph_csv', function ( req, res ) {
         console.log(path+'index.html');
 		res.sendFile(path+'data/au5.csv');
+});
+
+router.get( '/as5_graph_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/as5.csv');
 });
 
 router.get( '/dash_graph_php', function ( req, res ) {
