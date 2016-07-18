@@ -38,6 +38,21 @@ router.get( '/Asia', function ( req, res ) {
 	res.sendFile(path+'Asia.html');
 });
 
+router.get( '/Scale', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'inform/Scale.html');
+});
+
+router.get( '/In1', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'inform/10_large.html');
+});
+
+router.get( '/InG', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'inform/10_graph.html');
+});
+
 router.get( '/NAmer', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'NAmer.html');
@@ -51,6 +66,11 @@ router.get( '/Ocean', function ( req, res ) {
 router.get( '/SAmer', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'SAmer.html');
+});
+
+router.get( '/Con', function ( req, res ) {
+        console.log(path+'index.html');
+	res.sendFile(path+'Contact.html');
 });
 
 router.get( '/EuG', function ( req, res ) {

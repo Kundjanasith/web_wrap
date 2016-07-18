@@ -1,0 +1,33 @@
+<html>
+  <head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0nIrLUM-RADQeIsXOnK6wsJpMc0gfHMQ&callback=initMap" type="text/javascript"></script>
+  <script>
+    google.charts.load('current', { 'packages': ['map'] });
+    google.charts.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['Lat', 'Long', 'Name'],
+        [-38.29, -73.05, 'Ranking(1) Magnitude: 9.5 Richter [ 22 - 05 - 1960 ]'],
+        [ 61.02, -147.65, 'Ranking(2) Magnitude: 9.2 Richter [ 28 - 03 - 1964 ]'],
+        [ 3.30, 95.78, 'Ranking(3) Magnitude: 9.1 Richter [ 26 - 12 - 2006 ]'],
+        [ 38.322, 142.369, 'Ranking(4.1) Magnitude: 9.0 Richter [ 11 - 03 - 2011 ]'],
+        [ 52.76, 160.06, 'Ranking(4.2) Magnitude: 9.0 Richter [ 04 - 11 - 1952 ]'],
+        [-35.846, -72.719, 'Ranking(5.1) Magnitude: 8.8 Richter [ 27 - 02 - 2010 ]'],
+        [ 51.0, -81.5, 'Ranking(5.2) Magnitude: 8.8 Richter [ 31 - 01 - 1906 ]']
+      ]);
+
+    var options = { showTip: true };
+
+    var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+    map.draw(data, options);
+  };
+  </script>
+  </head>
+  <body>
+    <div id="chart_div" style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; "></div>
+  </body>
+</html>

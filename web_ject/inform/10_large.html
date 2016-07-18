@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Earthquake Service</title>
+
+    <!-- Bootstrap Core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="/BootstrapCoreCSS" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- <link href="css/sb-admin.css" rel="stylesheet"> -->
+    <link href="/CustomCSS" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <!-- <link href="css/plugins/morris.css" rel="stylesheet"> -->
+    <link href="/MorrisChartsCSS" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="/CustomFonts" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Earthquake Service</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Great earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 8.0 - 12.0 Magnitude ]</p>
+                                          <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Major earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 7.0 - 7.9 Magnitude ]</p>
+                                        <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Strong earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 6.0 - 6.9 Magnitude ]</p>
+                                        <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Moderate earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 5.0 - 5.9 Magnitude ]</p>
+                                        <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>Light earthquakes</strong>
+                                        </h5>
+                                        <p class="small text-muted">[ 4.0 - 4.9 Magnitude ]</p>
+                                      <p>Probability</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Kundjanasith Thonglek <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="/home"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+                    </li>
+                    <li>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                    </li>
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                    </li>
+                    <li>
+                        <a href="/Service"><i class="fa fa-fw fa-wrench"></i>Service</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-file"></i>Information<i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="/In1">5 Largest Earthquakes</a>
+                            </li>
+                            <li>
+                                <a href="/Scale">Earthquake Scale</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">Dropdown Item</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                    </li> -->
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            5 Largest Earthquakes <small>since 1900</small>
+                        </h1>
+
+                    </div>
+                </div>
+
+                  <div class="row">
+                <ol class="col-md-12 breadcrumb">
+                        <li class="active" >
+                            <i class="fa fa-dashboard"></i> Map
+                        </li>
+                        <div class="row carousel-holder">
+                <div class="col-md-12">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div >
+                                <iframe align='center' width="1250" height="300" src="/InG" style="border:none"  alt=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </ol>
+          </div>
+
+
+
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">1. Magnitude : 9.5 Richter</a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="col-lg-2"> Location : </div>
+                        <div class="col-lg-2"> Chile </div>
+                      </div>
+                      <div class="panel-body">
+                        <div class="col-lg-2"> Position : </div>
+                        <div class="col-lg-2"> Latitude : -38.29 </div>
+                        <div class="col-lg-2"> Longitude : -73.05 </div>
+                      </div>
+                      <div class="panel-body">
+                        <div class="col-lg-2"> Date : </div>
+                        <div class="col-lg-2"> 22 - 05 - 1960 </div>
+                      </div>
+                      <div class="panel-body">
+                         <textarea readonly class="form-control" rows="4" id="comment" >
+                         The 1960 Valdivia earthquake (Spanish: Terremoto de Valdivia) or Great Chilean earthquake (Gran terremoto de Chile) of 22 May is the most powerful earthquake ever recorded. Various studies have placed it at 9.4–9.6 on the moment magnitude scale. It occurred in the afternoon (19:11 GMT, 15:11 local time), and lasted approximately 10 minutes. The resulting tsunami affected southern Chile, Hawaii, Japan, the Philippines, eastern New Zealand, southeast Australia and the Aleutian Islands.
+                        </textarea>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                        <div class="panel-group">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse2">2. Magnitude : 9.2 Richter</a>
+                              </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <div class="col-lg-2"> Location : </div>
+                                <div class="col-lg-2"> Great Alaska  </div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="col-lg-2"> Position : </div>
+                                <div class="col-lg-2"> Latitude : 61.02	</div>
+                                <div class="col-lg-2"> Longitude : -147.65 </div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="col-lg-2"> Date : </div>
+                                <div class="col-lg-2"> 28 - 03 - 1964 </div>
+                              </div>
+                              <div class="panel-body">
+                                 <textarea readonly class="form-control" rows="4" id="comment" >
+                                The 1964 Alaskan earthquake, also known as the Great Alaskan earthquake and Good Friday earthquake, occurred at 5:36 P.M. AST on Good Friday, March 27. Across south-central Alaska, ground fissures, collapsing structures, and tsunamis resulting from the earthquake caused about 139 deaths.Lasting four minutes and thirty-eight seconds, the magnitude 9.2 megathrust earthquake was the most powerful recorded in North American history, and the second most powerful recorded in world history. Soil liquefaction, fissures, landslides, and other ground failures caused major structural damage in several communities and much damage to property.
+                              </textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="panel-group">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse3">3. Magnitude : 9.1 Richter</a>
+                              </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                <div class="col-lg-2"> Location : </div>
+                                <div class="col-lg-10"> The West Coast of Northern Sumatra  </div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="col-lg-2"> Position : </div>
+                                <div class="col-lg-2"> Latitude : 3.30 </div>
+                                <div class="col-lg-2"> Longitude : 95.78	 </div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="col-lg-2"> Date : </div>
+                                <div class="col-lg-2"> 26 - 12 - 2006 </div>
+                              </div>
+                              <div class="panel-body">
+                                <textarea readonly class="form-control" rows="4" id="comment" >
+                                The 2006 Hengchun earthquakes occurred on December 26 at 20:26 and 20:34 local time off the southwest coast of Taiwan in the Luzon Strait, which connects the South China Sea with the Philippine Sea. The International Seismological Centre measured the shocks at 7.0 and 6.9 on the moment magnitude scale. The earthquakes not only caused casualties and building damage, but several submarine communications cables were cut, disrupting telecommunication services in various parts of Asia. Coincidentally, the earthquake occurred on the second anniversary of the 2004 Indian Ocean earthquake that devastated the coastal communities across Southeast and South Asia and 3rd anniversary of the 2003 earthquake that affected the southern Iranian city of Bam.
+                                </textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="panel-group">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse4">4. Magnitude : 9.0 Richter</a>
+                              </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+
+                              <!-- <div class="panel-group"> -->
+                                <!-- <div class="panel panel-default"> -->
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" href="#collapse4_1">4.1 The East Coast of Honshu</a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse4_1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Location : </div>
+                                      <div class="col-lg-10"> Japan  </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Position : </div>
+                                      <div class="col-lg-2"> Latitude : 38.322	</div>
+                                      <div class="col-lg-2"> Longitude : 142.369  </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Date : </div>
+                                      <div class="col-lg-2"> 11 - 03 - 2011 </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <textarea readonly class="form-control" rows="4" id="comment" >
+                                    The 2011 earthquake off the Pacific coast of Tōhoku (東北地方太平洋沖地震 Tōhoku-chihō Taiheiyō Oki Jishin?) was a magnitude 9.0 (Mw) undersea megathrust earthquake off the coast of Japan that occurred at 14:46 JST (05:46 UTC) on Friday 11 March 2011,[2][3][8] with the epicentre approximately 70 kilometres (43 mi) east of the Oshika Peninsula of Tōhoku and the hypocenter at an underwater depth of approximately 30 km (19 mi).[2][9] The earthquake is also often referred to in Japan as the Great East Japan earthquake (東日本大震災 Higashi nihon daishinsai?)[10][11][12][fn 1] and also known as the 2011 Tohoku earthquake,[26] and the 3.11 earthquake. It was the most powerful earthquake ever recorded to have hit Japan, and the fourth most powerful earthquake in the world since modern record-keeping began in 1900.[8][27][28] The earthquake triggered powerful tsunami waves that reached heights of up to 40.5 metres (133 ft) in Miyako in Tōhoku's Iwate Prefecture,[29][30] and which, in the Sendai area, traveled up to 10 km (6 mi) inland.[31] The earthquake moved Honshu (the main island of Japan) 2.4 m (8 ft) east, shifted the Earth on its axis by estimates of between 10 cm (4 in) and 25 cm (10 in),[32][33][34] and generated sound waves detected by the low-orbiting GOCE satellite.[35]
+                                      </textarea>
+                                    </div>
+                                  </div>
+                                <!-- </div> -->
+                              <!-- </div> -->
+
+                              <!-- <div class="panel-group"> -->
+                                <!-- <div class="panel panel-default"> -->
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" href="#collapse4_2">4.2 	Kamchatka</a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse4_2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Location : </div>
+                                      <div class="col-lg-10"> Kamchatka </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Position : </div>
+                                      <div class="col-lg-2"> Latitude : 52.76	 </div>
+                                      <div class="col-lg-2"> Longitude : 160.06	 </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Date : </div>
+                                      <div class="col-lg-2"> 04 - 11 - 1952 </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <textarea readonly class="form-control" rows="4" id="comment" >
+                                      Three earthquakes, which occurred off the coast of Kamchatka Peninsula in far eastern Russia and the Soviet Union in 1737, 1923 and 1952, were megathrust earthquakes and caused tsunamis. They occurred where the Pacific Plate subducts under the Okhotsk Plate at the Kuril-Kamchatka Trench. The depth of the trench at the point of the earthquakes is 7,000–7,500 m. Northern Kamchatka lies at the western end of the Bering fault, between the Pacific Plate and North American Plate,[1] or the Bering plate[2] There are many more earthquakes and tsunamis originating from Kamchatka, of which the most recent was the 1997 Kamchatka earthquake and tsunami originating near the Kronotsky Peninsula.
+                                    </textarea>
+                                    </div>
+                                  </div>
+                                <!-- </div> -->
+                              <!-- </div> -->
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="panel-group">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse5">5. Magnitude : 8.8 Richter</a>
+                              </h4>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse">
+
+                              <!-- <div class="panel-group"> -->
+                                <!-- <div class="panel panel-default"> -->
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" href="#collapse5_1">5.1 Chile</a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse5_1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Location : </div>
+                                      <div class="col-lg-10"> Chile </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Position : </div>
+                                      <div class="col-lg-2"> Latitude : -35.846	</div>
+                                      <div class="col-lg-2"> Longitude : -72.719	  </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Date : </div>
+                                      <div class="col-lg-2"> 27 - 02 - 2010 </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <textarea readonly class="form-control" rows="4" id="comment" >
+                                          The 2010 Chile earthquake (Spanish: Terremoto del 27F) occurred off the coast of central Chile on Saturday, 27 February at 03:34 local time (06:34 UTC), having a magnitude of 8.8 on the moment magnitude scale, with intense shaking lasting for about three minutes.[5][1][2][6] It ranks as the fifth largest earthquake ever to be recorded by a seismograph. It was felt strongly in six Chilean regions (from Valparaíso in the north to Araucanía in the south), that together make up about 80 percent of the country's population. According to the United States Geological Survey (USGS) the cities experiencing the strongest shaking—VIII (Severe) on the Mercalli intensity scale (MM)—were Concepción, Arauco and Coronel. According to Chile's Seismological Service Concepción experienced the strongest shaking at MM IX (Violent).[1] The earthquake was felt in the capital Santiago at MM VII (Very strong)[3] or MM VIII.[1] Tremors were felt in many Argentine cities, including Buenos Aires, Córdoba, Mendoza and La Rioja.[7][8] Tremors were felt as far north as the city of Ica in southern Peru (approx. 2,400 km (1,500 mi) away).
+                                        </textarea>
+                                    </div>
+                                  </div>
+                                <!-- </div> -->
+                              <!-- </div> -->
+
+                              <!-- <div class="panel-group"> -->
+                                <!-- <div class="panel panel-default"> -->
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <a data-toggle="collapse" href="#collapse5_2">5.2 Ecuador</a>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse5_2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Location : </div>
+                                      <div class="col-lg-10"> Ecuador </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Position : </div>
+                                      <div class="col-lg-2"> Latitude : 51.0	 </div>
+                                      <div class="col-lg-2"> Longitude : -81.5		 </div>
+                                    </div>
+                                    <div class="panel-body">
+                                      <div class="col-lg-2"> Date : </div>
+                                      <div class="col-lg-2"> 31 - 01 - 1906 </div>
+                                    </div>
+                                    <div class="panel-body">
+                                          <textarea readonly class="form-control" rows="4" id="comment" >
+                                            The 1906 Ecuador–Colombia earthquake occurred at 15:36 UTC on January 31, off the coast of Ecuador, near Esmeraldas. The earthquake had a moment magnitude of 8.8 and triggered a destructive tsunami that caused at least 500 casualties on the coast of Colombia.The earthquake occurred along the boundary between the Nazca Plate and the South American Plate. The earthquake is likely to be a result of thrust-faulting, caused by the subduction of the Nazca plate beneath the South American plate. The coastal parts of Ecuador and Colombia have a history of great megathrust earthquakes originating from this plate boundary.
+                                          </textarea>
+                                    </div>
+                                  </div>
+                                <!-- </div> -->
+                              <!-- </div> -->
+
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="/jQuery"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="/BootstrapCoreJavaScript"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <!-- <script src="js/plugins/morris/raphael.min.js"></script> -->
+    <script src="/Raphael"></script>
+    <!-- <script src="js/plugins/morris/morris.min.js"></script> -->
+    <script src="/Morris"></script>
+    <!-- <script src="js/plugins/morris/morris-data.js"></script> -->
+    <script src="/MorrisData"></script>
+
+</body>
+
+</html>
