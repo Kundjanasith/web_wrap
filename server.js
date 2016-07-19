@@ -718,7 +718,90 @@ router.get( '/jquery.csv.min.js', function ( req, res ) {
 		res.sendFile(path+'php/csv_min.js');
 });
 
+router.get( '/links1', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/links1.csv');
+});
 
+router.get( '/nodes1', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/nodes1.csv');
+});
+
+router.get( '/net1', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/index1.html');
+});
+
+router.get( '/calendar', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/index.html');
+});
+
+router.get( '/cal_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/cal.csv');
+});
+
+router.get( '/C1900_1910', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1900_1910.html');
+});
+
+router.get( '/C1910_1920', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1910_1920.html');
+});
+
+router.get( '/C1920_1930', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1920_1930.html');
+});
+
+router.get( '/C1930_1940', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1930_1940.html');
+});
+
+router.get( '/C1940_1950', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1940_1950.html');
+});
+
+router.get( '/C1950_1960', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1950_1960.html');
+});
+
+router.get( '/C1960_1970', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1960_1970.html');
+});
+
+router.get( '/C1970_1980', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1970_1980.html');
+});
+
+router.get( '/C1980_1990', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1980_1990.html');
+});
+
+router.get( '/C1990_2000', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/1990_2000.html');
+});
+
+router.get( '/C2000_2010', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/2000_2010.html');
+});
+
+router.get( '/C2010_2020', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'network/2010_2020.html');
+});
 
 app.use( '/', router );
 app.listen(1919,function(){
