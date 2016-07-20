@@ -803,6 +803,56 @@ router.get( '/C2010_2020', function ( req, res ) {
 		res.sendFile(path+'network/2010_2020.html');
 });
 
+router.get( '/C4_5', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'clustering/4_5.html');
+});
+
+router.get( '/C4_5_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/C4_5.csv');
+});
+
+router.get( '/C5_6', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'clustering/5_6.html');
+});
+
+router.get( '/C5_6_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/C5_6.csv');
+});
+
+router.get( '/C6_7', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'clustering/6_7.html');
+});
+
+router.get( '/C6_7_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/C6_7.csv');
+});
+
+router.get( '/C7_8', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'clustering/7_8.html');
+});
+
+router.get( '/C7_8_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/C7_8.csv');
+});
+
+router.get( '/C8_9', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'clustering/8_9.html');
+});
+
+router.get( '/C8_9_csv', function ( req, res ) {
+        console.log(path+'index.html');
+		res.sendFile(path+'data/C8_9.csv');
+});
+
 app.use( '/', router );
 app.listen(1919,function(){
 	console.log("Running 1919");
