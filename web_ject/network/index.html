@@ -166,7 +166,7 @@
               </ul>
           </div>
       </nav>
-      
+
         <div id="page-wrapper">
 
             <div class="container-fluid">
@@ -177,6 +177,7 @@
                         <h1 class="page-header">
                             Calendar <small>in century</small>
                         </h1>
+
                         <!-- <ol class="breadcrumb">
                             <li class="active" >
                                 <i class="fa fa-dashboard"></i> Continent
@@ -191,7 +192,142 @@
                     </div>
                 </div>
 
+                <div class="row">
+                  <div class="col-lg-6">
+
+                </div>
+                  <div class="col-lg-4">
+                  <input type="text" class="form-control" id="inputY" placeholder="Input year. . .">
+                </div>
+                <div class="col-lg-2">
+                <button width=window.Width class="btn btn-success" onclick="myFunction()">Search</button>
+                <script>
+                function myFunction() {
+                    var N = document.getElementById("inputY");
+                    var Y20102020 = document.getElementById("2010_2020");
+                    var Y20002010 = document.getElementById("2000_2010");
+                    var Y19902000 = document.getElementById("1990_2000");
+                    var Y19801990 = document.getElementById("1980_1990");
+                    var Y19701980 = document.getElementById("1970_1980");
+                    var Y19601970 = document.getElementById("1960_1970");
+                    var Y19501960 = document.getElementById("1950_1960");
+                    var Y19401950 = document.getElementById("1940_1950");
+                    var Y19301940 = document.getElementById("1930_1940");
+                    var Y19201930 = document.getElementById("1920_1930");
+                    var Y19101920 = document.getElementById("1910_1920");
+                    var Y19001910 = document.getElementById("1900_1910");
+                    if(N.value>=1900&N.value<=2016){
+                      // alert(N.value);
+                      Y20102020.style.display="none";
+                      Y20002010.style.display="none";
+
+                      Y19902000.style.display="none";
+                      Y19801990.style.display="none";
+
+                      Y19701980.style.display="none";
+                      Y19601970.style.display="none";
+
+                      Y19501960.style.display="none";
+                      Y19401950.style.display="none";
+
+                      Y19301940.style.display="none";
+                      Y19201930.style.display="none";
+
+                      Y19101920.style.display="none";
+                      Y19001910.style.display="none";
+
+                      if(N.value>=2010&N.value<=2020){
+                        Y20102020.style.display="block";
+                      }
+                      if(N.value>=2000&N.value<2010){
+                        Y20002010.style.display="block";
+                      }
+                      if(N.value>=1990&N.value<2000){
+                        Y19902000.style.display="block";
+                      }
+                      if(N.value>=1980&N.value<1990){
+                        Y19801990.style.display="block";
+                      }
+                      if(N.value>=1970&N.value<1980){
+                        Y19701980.style.display="block";
+                      }
+                      if(N.value>=1960&N.value<1970){
+                        Y19601970.style.display="block";
+                      }
+                      if(N.value>=1950&N.value<1960){
+                        Y19501960.style.display="block";
+                      }
+                      if(N.value>=1940&N.value<1950){
+                        Y19401950.style.display="block";
+                      }
+                      if(N.value>=1930&N.value<1940){
+                        Y19301940.style.display="block";
+                      }
+                      if(N.value>=1920&N.value<1930){
+                        Y19201930.style.display="block";
+                      }
+                      if(N.value>=1910&N.value<1920){
+                        Y19101920.style.display="block";
+                      }
+                      if(N.value>=1900&N.value<1910){
+                        Y19001910.style.display="block";
+                      }
+                    }
+                    else{
+                      alert("Invalid input");
+                      N.value = "";
+                    }
+
+                }
+                </script>
+              </div>
+                </div>
+
+                <div class="row">
+                  <div >
+                      <iframe id="2010_2020" class="col-lg-12" align='center' width="1000" height="500" src="/C2010_2020" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="2000_2010" class="col-lg-12" align='center' width="1000" height="500" src="/C2000_2010" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1990_2000" class="col-lg-12" align='center' width="1000" height="500" src="/C1990_2000" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1980_1990" class="col-lg-12" align='center' width="1000" height="500" src="/C1980_1990" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1970_1980" class="col-lg-12" align='center' width="1000" height="500" src="/C1970_1980" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1960_1970" class="col-lg-12" align='center' width="1000" height="500" src="/C1960_1970" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1950_1960" class="col-lg-12" align='center' width="1000" height="500" src="/C1950_1960" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1940_1950" class="col-lg-12" align='center' width="1000" height="500" src="/C1940_1950" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1930_1940" class="col-lg-12" align='center' width="1000" height="500" src="/C1930_1940" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1920_1930" class="col-lg-12" align='center' width="1000" height="500" src="/C1920_1930" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1910_1920" class="col-lg-12" align='center' width="1000" height="500" src="/C1910_1920" style="display:none;"  alt=""></iframe>
+                  </div>
+                  <div >
+                      <iframe id="1900_1910" class="col-lg-12" align='center' width="1000" height="500" src="/C1900_1910" style="display:none;"  alt=""></iframe>
+                  </div>
+                </div>
+
                 <!-- /.row -->
+
+                <div class="row">
+                    <h2> 1900 - 2016 </h2>
+                </div>
+
 
                 <div class="row">
                   <div class="panel-group">
