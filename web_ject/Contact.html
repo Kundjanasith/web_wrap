@@ -185,7 +185,7 @@
                 <!-- /.row -->
                 <!-- /.row -->
 
-                <div class="row">
+                <!-- <div class="row">
                   <div class="form-group">
   <label for="usr">Name:</label>
   <input type="text" class="form-control" id="usr" placeholder="Your name">
@@ -193,9 +193,19 @@
 <div class="form-group">
   <label for="comment">Message:</label>
   <textarea class="form-control" rows="5" id="comment" placeholder="Your comment"></textarea>
-</div>
+</div> -->
 
-<button width=window.Width class="btn btn-info" onclick="myFunction()">Send Message</button>
+<form action="MAILTO:kundjanasith.t@ku.th" method="post" enctype="text/plain">
+<label for="usr">Name:</label><br>
+<input class="form-control" type="text" name="name" value="your name" placeholder="Your name"><br>
+<label for="comment">Message:</label><br>
+<textarea  class="form-control" type="text" name="comment" rows="5" value="your comment" size="50" placeholder="Your comment"></textarea><br><br>
+<input type="submit" class="btn btn-info" value="Send Message">
+<!-- <input type="reset" value="Reset"> -->
+</form>
+
+
+<!-- <button width=window.Width class="btn btn-info" onclick="myFunction()">Send Message</button> -->
 
 <script>
 function myFunction() {
