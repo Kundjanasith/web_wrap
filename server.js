@@ -13,6 +13,12 @@ router.get( '/home', function ( req, res ) {
 	res.sendFile(path+'index.html');
 });
 
+router.get( '/sendData/:x', function ( req, res ) {
+	  var x = req.params.x;
+		console.log(x);
+	  res.sendFile(path+'continents/service.html');
+});
+
 router.get( '/Vir', function ( req, res ) {
         console.log(path+'index.html');
 	res.sendFile(path+'Vir.html');
