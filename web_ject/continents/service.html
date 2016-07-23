@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -195,21 +195,33 @@
                 <div class="panel-group">
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse1">Predict Earthquake</a>
+                      <h4 class="panel-title" >
+                        <a data-toggle="collapse" href="#collapse1" onclick="openPre()">Predict Earthquake</a>
                       </h4>
+                      <script>
+                      function openPre(){
+                        var setYear = document.getElementById("setYear");
+                        var year = document.getElementById("year");
+                        var showYear = document.getElementById("showYear");
+                        setYear.style.display="block"
+                        year.disabled=false
+                        showYear.style.display="block"
+                      }
+                      </script>
                     </div>
                     <div id="collapse1" class="panel-collapse collapse">
                       <div class="panel-body">Description: </div>
 
                     <!-- <div class="row"> -->
-                    <div class="panel-body">
+                    <div id="setYear" class="panel-body">
+                      <div class="col-xs-6 col-sm-4 panel-body">Year: </div>
                       <select id="year" class="col-xs-6 col-sm-4 huge" ></select>
                       <button id="showYear" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickYear()" style="display:block;">Confirm</button>
                       <button id="editYear" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editYear()">Edit</button>
                     </div>
 
                     <div id="setMonth" class="panel-body"  style="display:none;">
+                      <div class="col-xs-6 col-sm-4 panel-body">Month: </div>
                       <select id="month" class="col-xs-6 col-sm-4 huge"></select>
                       <button id="showMonth" type="button" class="col-xs-6 col-sm-4 btn btn-danger"  onclick="clickMonth()" style="display:block;">Confirm</button>
                       <button id="editMonth" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editMonth()">Edit</button>
@@ -227,9 +239,14 @@
                         var ed = document.getElementById("editFromDay");
                         var td = document.getElementById("setToDay");
                         buy.style.display="none"
-                        ed.style.display="block"
+                        // ed.style.display="block"
                         td.style.display="block"
-
+                        var today= document.getElementById("today");
+                        today.disabled=false;
+                        var showToDay= document.getElementById("showToDay");
+                        showToDay.style.display="block"
+                        today.options.length=0;
+                        // console.log("FD"+ye.selectedIndex+1);
                         var elm = document.getElementById('today'), df = document.createDocumentFragment();
                         var yex = document.getElementById("year");
                         var mo = document.getElementById("month");
@@ -240,13 +257,16 @@
                         }
                         var NM = num_month[mo.selectedIndex];
                         console.log("TT"+ye.value+mo.value);
-                        for (var i = ye.selectedIndex+1 ; i <= NM; i++) {
+                        console.log("TEMZ"+ye.value);
+                        // console.log("TEMZ"+ye.selectedIndex);
+                        for (var i = ye.value ; i <= NM; i++) {
                           var option = document.createElement('option');
                           option.value = i;
                           option.appendChild(document.createTextNode("Day: " + i));
                           df.appendChild(option);
                         }
                         elm.appendChild(df);
+
                       }
                       </script>
                       <button id="editFromDay" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editFromDay()">Edit</button>
@@ -258,7 +278,7 @@
                         var ed = document.getElementById("editFromDay");
                         buy.style.display="block"
                         ed.style.display="none"
-                        var bu = document.getElementById("setToDay");
+                        var bu = document.getElementById("collapseZ");
                         bu.style.display="none"
                       }
                       </script>
@@ -307,7 +327,7 @@
                         var buy = document.getElementById("showToDay");
                         var ed = document.getElementById("editToDay");
                         buy.style.display="none"
-                        ed.style.display="block"
+                        // ed.style.display="block"
 
                         var co = document.getElementById("setCountry");
                         co.style.display="block"
@@ -321,6 +341,7 @@
                           df.appendChild(option);
                         }
                         x1.appendChild(df);
+
                       }
                       </script>
                       <button id="editToDay" type="button" class="col-xs-6 col-sm-4 btn btn-info"  style="display:none;" onclick="editToDay()">Edit</button>
@@ -348,7 +369,7 @@
                         var x = document.getElementById("showCountry");
                         x.style.display="none";
                         var y = document.getElementById("editCountry");
-                        y.style.display="block";
+                        // y.style.display="block";
                         var fe = document.getElementById("fromday");
                         var mon = document.getElementById("month");
                         var m = ["January","Febuary","March","April","May","June","July","August","September","October","November","December"];
@@ -363,6 +384,7 @@
                         text.textContent = "Started Date : "+fe.value+"_"+m[mon.selectedIndex]+"_"+ar.value+" -- Ended Date : "+ye.value+"_"+m[mon.selectedIndex]+"_"+ar.value;
                         Ntext.textContent = "NumberOfDays : "+ ((parseInt(ye.value)-parseInt(fe.value))+parseInt(1));
                         Ctext.textContent = "Country : " +x2[inp.value];
+                        inp.disabled = true;
                       }
 
                       </script>
@@ -389,9 +411,75 @@
                          var f = "/sendData/"+text.innerHTML+"+"+Ntext.innerHTML+"+"+Ctext.innerHTML;
                          xhttp.open("GET", f, true);
                          xhttp.send();
+
                        }
                       </script>
-                        <div id="goBut" class="col-xs-6 col-sm-6 btn btn-success" onclick="sendData()">Go!</div>
+                        <!-- <div id="goBut" class="col-xs-6 col-sm-6 btn btn-success" data-toggle="modal" data-target="#myModal" onclick="sendData()" >Go!</div> -->
+                        <div id="goBut" class="col-xs-6 col-sm-6 btn btn-success" data-toggle="modal" data-target="#myModal" onclick="sendData()"  data-keyboard="false" data-backdrop="static" >Go!</div>
+                        <div class="modal fade" id="myModal" role="dialog">
+
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" onclick="closeZ()">&times;</button>
+          <h4 class="modal-title">Solution</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="closeZ()">Close</button>
+        </div>
+      </div>
+      <script>
+      function closeZ(){
+        var setYear = document.getElementById("setYear");
+        setYear.style.display="none";
+        var setMonth = document.getElementById("setMonth");
+        setMonth.style.display="none";
+        var setFD = document.getElementById("setFromDay");
+        setFD.style.display="none";
+        var setTD = document.getElementById("setToDay");
+        setTD.style.display="none";
+        var setCo = document.getElementById("setCountry");
+        setCo.style.display="none";
+        var sum = document.getElementById("summa");
+        sum.style.display="none";
+        // var setYear = document.getElementById("setYear");
+        var year = document.getElementById("year");
+        var showYear = document.getElementById("showYear");
+        setYear.style.display="block"
+        year.disabled=false
+        showYear.style.display="block"
+        //
+        var month= document.getElementById("month");
+        month.disabled=false;
+        var showMonth= document.getElementById("showMonth");
+        showMonth.style.display="block"
+        //
+        var month= document.getElementById("month");
+        month.disabled=false;
+        var showMonth= document.getElementById("showMonth");
+        showMonth.style.display="block"
+        //
+        var fromday= document.getElementById("fromday");
+        fromday.disabled=false;
+        var showFromDay= document.getElementById("showFromDay");
+        showFromDay.style.display="block"
+        //
+
+        //
+        var country= document.getElementById("country");
+        country.disabled=false;
+        var showCountry= document.getElementById("showCountry");
+        showCountry.style.display="block"
+      }
+      </script>
+
+    </div>
+  </div>
                     </div>
 
                     <script>
@@ -413,11 +501,13 @@
                       var mm = document.getElementById("setFromDay");
                       ye.disabled = true;
                       buy.style.display="none"
-                      ed.style.display="block"
+                      // ed.style.display="block"
                       mm.style.display="block"
                       console.log(ye.value);
                       // function initFromDay() {
+
                         var elm = document.getElementById('fromday'), df = document.createDocumentFragment();
+                        elm.options.length=0;
                         var yex = document.getElementById("year");
                         var mo = document.getElementById("month");
                         var num_month = [31,28,31,30,31,30,31,31,30,31,30,31];
@@ -441,7 +531,7 @@
                       <script>
                       (function() {
                         var elm = document.getElementById('year'), df = document.createDocumentFragment();
-                        for (var i = 2016 ; i <= 2500; i++) {
+                        for (var i = 2016 ; i <= 2026; i++) {
                           var option = document.createElement('option');
                           option.value = i;
                           option.appendChild(document.createTextNode("Year: " + i));
@@ -456,7 +546,7 @@
                         var mm = document.getElementById("setMonth");
                         ye.disabled = true;
                         buy.style.display="none"
-                        ed.style.display="block"
+                        // ed.style.display="block"
                         mm.style.display="block"
                         console.log(ye.value);
 
